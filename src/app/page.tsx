@@ -1,4 +1,4 @@
-import { Github, ExternalLink, Sparkles, Workflow, Users, Code, Star, GitBranch, MessageCircle, Eye } from "lucide-react";
+import { Github, ExternalLink, Sparkles, Workflow, Users, Code, MessageCircle, Eye } from "lucide-react";
 import Image from "next/image";
 
 const projects = [
@@ -163,7 +163,7 @@ export default function Home() {
 
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-bold mb-8 text-yellow-400">
-              "The future of AI is open source"
+              &ldquo;The future of AI is open source&rdquo;
             </p>
             <a 
               href="https://discord.gg/wbXhARAPvK" 
