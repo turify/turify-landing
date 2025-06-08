@@ -116,62 +116,87 @@ export default function Home() {
       </section>
 
       {/* Purpose Section */}
-      <section id="purpose" className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      <section id="purpose" className="relative py-24 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-white/5 to-transparent rounded-full -translate-y-32 translate-x-32"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-white/5 to-transparent rounded-full translate-y-32 -translate-x-32"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center px-4 py-2 bg-white/10 rounded-full text-sm font-medium text-white/80 mb-6 backdrop-blur-sm border border-white/20">
+              <Sparkles className="w-4 h-4 mr-2" />
+              Our Mission
+            </div>
+            <h2 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
               Revolutionising AI
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"> Together</span>
+              <span className="block bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent mt-2">
+                Together
+              </span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
               We believe AI development should be transparent, collaborative, and accessible to everyone. 
               Join our open source community to reshape how the world builds with artificial intelligence.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Code className="w-8 h-8 text-white" />
+          {/* Feature Cards */}
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            <div className="group text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300">
+                <Code className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Open Innovation</h3>
-              <p className="text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-white">Open Innovation</h3>
+              <p className="text-white/80 leading-relaxed">
                 Break down barriers in AI development. Every line of code, every breakthrough, shared with the global developer community.
               </p>
             </div>
             
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-white" />
+            <div className="group text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-emerald-500/25 transition-all duration-300">
+                <Users className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Community Driven</h3>
-              <p className="text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-white">Community Driven</h3>
+              <p className="text-white/80 leading-relaxed">
                 Powered by passionate developers worldwide. Your ideas, contributions, and feedback shape the future of AI tooling.
               </p>
             </div>
             
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-red-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Sparkles className="w-8 h-8 text-white" />
+            <div className="group text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+              <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-pink-500/25 transition-all duration-300">
+                <Sparkles className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Democratize AI</h3>
-              <p className="text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-white">Democratize AI</h3>
+              <p className="text-white/80 leading-relaxed">
                 Make advanced AI capabilities accessible to every developer, startup, and organization - regardless of size or budget.
               </p>
             </div>
           </div>
 
+          {/* CTA Section */}
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-bold mb-8 text-yellow-400">
-              &ldquo;The future of AI is open source&rdquo;
-            </p>
-            <a 
-              href="https://discord.gg/wbXhARAPvK" 
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-black rounded-lg font-bold hover:shadow-lg transition-all transform hover:scale-105"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>Join Our Community</span>
-            </a>
+            <div className="inline-block p-8 rounded-3xl bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-white/20 mb-8">
+              <p className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                &ldquo;The future of AI is open source&rdquo;
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a 
+                  href="https://discord.gg/wbXhARAPvK" 
+                  className="group inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-black rounded-xl font-bold hover:from-yellow-400 hover:to-orange-400 transition-all transform hover:scale-105 shadow-lg hover:shadow-yellow-500/25"
+                >
+                  <MessageCircle className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                  <span>Join Our Community</span>
+                </a>
+                <a 
+                  href="https://github.com/turify" 
+                  className="inline-flex items-center space-x-3 px-8 py-4 border-2 border-white/30 text-white rounded-xl font-bold hover:bg-white/10 transition-all backdrop-blur-sm"
+                >
+                  <Github className="w-5 h-5" />
+                  <span>Explore Projects</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
