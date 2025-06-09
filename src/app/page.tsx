@@ -293,6 +293,8 @@ export default function Home() {
                   <div className="flex gap-3">
                     <a 
                       href={`https://${project.subdomain}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium text-sm text-center hover:shadow-md transition-all flex items-center justify-center space-x-1"
                     >
                       <ExternalLink className="w-3 h-3" />
@@ -349,9 +351,9 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Projects</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="https://prompts.turify.dev" className="hover:text-white transition-colors">Turify Prompts</a></li>
-                <li><a href="https://diagrams.turify.dev" className="hover:text-white transition-colors">Turify Diagrams</a></li>
-                <li><a href="https://obs.turify.dev" className="hover:text-white transition-colors">Turify Obs</a></li>
+                <li><a href="https://prompts.turify.dev" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Turify Prompts</a></li>
+                <li><a href="https://diagrams.turify.dev" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Turify Diagrams</a></li>
+                <li><a href="https://obs.turify.dev" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Turify Obs</a></li>
               </ul>
             </div>
             
