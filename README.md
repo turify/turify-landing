@@ -2,7 +2,7 @@
 
 **Revolutionising AI development through open source innovation**
 
-Turify is a community-driven ecosystem of cutting-edge AI tools designed to empower developers, startups, and organizations of all sizes. We believe the future of AI is open source, transparent, and accessible to everyone.
+Turify is a community-driven ecosystem of cutting-edge AI tools designed to empower developers, startups, and organisations of all sizes. We believe the future of AI is open source, transparent, and accessible to everyone.
 
 ## 🎯 Our Mission
 
@@ -29,7 +29,7 @@ Next-generation GenAI observation and prompt engineering platform. Monitor, anal
 
 - **🔓 Open Innovation**: Transparent development with every breakthrough shared publicly
 - **👥 Community Driven**: Powered by passionate developers worldwide
-- **🎁 Democratize AI**: Make advanced AI accessible regardless of budget or organization size
+- **🎁 Democratize AI**: Make advanced AI accessible regardless of budget or organisation size
 - **⚡ Modern Tech**: Built with cutting-edge technologies and best practices
 
 ## 🚀 Get Started

@@ -66,7 +66,7 @@ export default function Home() {
     <div className="min-h-screen ">
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
+          <div className="flex justify-between items-center py-3">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 relative">
                 <Image
@@ -126,7 +126,7 @@ export default function Home() {
           {/* Contributors Section */}
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-6">
-              <p className="text-sm font-medium text-gray-600 mb-2">🌍 Trusted by developers worldwide</p>
+              {/* <p className="text-sm font-medium text-gray-600 mb-2">🌍 Trusted by developers worldwide</p> */}
               <h3 className="text-xl font-semibold text-gray-900">Built by our community ❤️</h3>
             </div>
             
@@ -185,7 +185,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Democratize AI</h3>
               <p className="text-white/80 leading-relaxed">
-                Make advanced AI capabilities accessible to every developer, startup, and organization - regardless of size or budget.
+                Make advanced AI capabilities accessible to every developer, startup, and organisation - regardless of size or budget.
               </p>
             </div>
           </div>
@@ -361,7 +361,7 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="https://discord.gg/wbXhARAPvK" className="hover:text-white transition-colors">Discord Community</a></li>
-                <li><a href="https://github.com/turify" className="hover:text-white transition-colors">GitHub Organization</a></li>
+                <li><a href="https://github.com/turify" className="hover:text-white transition-colors">GitHub Organisation</a></li>
               </ul>
             </div>
           </div>
